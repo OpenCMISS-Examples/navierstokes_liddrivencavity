@@ -100,10 +100,12 @@ fluidProblemUserNumber = 1
 import numpy,csv,time,sys,os,pdb
 from opencmiss.iron import iron
 
+path=os.path.dirname(os.path.abspath(__file__))
+
 if len(sys.argv) > 1:
     cellml_file = sys.argv[1]
 else:
-    cellml_file = "input/fixedlidvelocity.cellml"
+    cellml_file = os.path.join(path,"input/fixedlidvelocity.cellml")
 
 # Diagnostics
 #iron.DiagnosticsSetOn(iron.DiagnosticTypes.ALL,[1,2,3,4,5],"Diagnostics",[""])
