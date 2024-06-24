@@ -114,7 +114,7 @@ iron.OutputSetOn("Testing")
 
 # Get the computational nodes info
 numberOfComputationalNodes = iron.ComputationalNumberOfNodesGet()
-computationalNodeNumber    = iron.ComputationalNodeNumberGet()
+computationalNodeNumber = iron.ComputationalNodeNumberGet()
 
 #================================================================================================================================
 #  Initial Data & Default Values
